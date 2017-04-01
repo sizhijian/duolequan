@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />  
+    <meta name="format-detection" content="telephone=no">
+    <title></title>   
+    <link rel="stylesheet" type="text/css" href="static/css/reset.css"/>
+    <style type="text/css">
+    	.header{height: 2.75rem;line-height: 2.75rem;background: #000;text-align: center;color: #fff;}
+    	.bootomUl{position: fixed;bottom: 0;width: 100%;}
+    	.bottomBtn{width: 33.33%;box-sizing:border-box;float: left;border: 1px solid #4E4E4E;text-align: center;height: 3rem;line-height:3rem;background: #fff;color:#999}
+    	
+    	.bottomBtn a{display: block;width: 100%;height: 100%;}
+    	.goodHome ,.liLove,.meiDao{position: fixed;bottom: 3rem;width: 20%;}
+    	.goodHome{left: 7%;}
+    	.liLove{left: 40%;}
+    	.meiDao{left: 73%;}
+    	.goodHome li,.liLove li,.meiDao li{height:3.5rem;line-height:3.5rem;border: 1px solid #333;text-align: center;}
+    	body a:-webkit-any-link{color: #666 ;}
+    </style>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		$(".haojiaClick").click(function(){
+    			$(".liLove , .meiDao").slideUp();
+    		});
+    		$(".liaiClick").click(function(){
+    			$(".liLove").slideToggle();
+    			$(".goodHome , .meiDao").slideUp();
+    		});
+    		$(".meidaoClick").click(function(){
+    			$(".meiDao").slideToggle();
+    			$(".liLove , .goodHome").slideUp();
+    		});
+    	});
+    </script>
+</head>
+<body>
+	<ul class="liLove">
+		<li><a href="local-business.html">本地商家</a></li>
+		<li><a href="nearby-business.html">附近</a></li>
+		<li><a href="duolegou-index.html">多乐购</a></li>
+	</ul>
+	<ul class="meiDao">
+		<li><a href="personal-index.html">个人中心</a></li>
+		<li><a href="merchants-login.html">商家登录</a></li>
+		<li><a href="cooperation.html">商务合作</a></li>
+	</ul>
+	<ul class="bootomUl">
+		<li class="bottomBtn haojiaClick"><a href="ticket-get.html">领券</a></li>
+		<li class="bottomBtn liaiClick" >生活圈</li>
+		<li class="bottomBtn meidaoClick" >服务</li>
+	</ul>
+</body>
+</html>

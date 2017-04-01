@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="static/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="static/css/mobiscroll.custom-3.0.0-beta6.min.css"/>
+		<link rel="stylesheet" type="text/css" href="static/css/style.css" />
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="static/js/fastclick.js" type="text/javascript" charset="utf-8"></script>
+		<script src="static/js/mobiscroll.custom-3.0.0-beta6.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="static/js/activity.js" type="text/javascript" charset="utf-8"></script>
+		<title>商家-公众号领取</title>
+		<script type="text/javascript">
+			$(function(){
+				$("#ticket_select").click(function(){
+					$("#select_show_box").show();
+				});
+				$("#select_show_box a").click(function(){
+					$("#select_show_box").hide();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="wrap">
+			<div id="select_show_box" hidden>
+				<div class="list-ticket merchants select">
+					<div class="item">
+						<a>
+							<div class="info daijinquan">
+								<div class="wrap-img">
+									<img src="static/images/temp-1.png">
+								</div>
+								<span class="col-orange">¥88</span>
+								<span>川香火锅代金券 X1</span>
+							</div>
+							<div class="down">
+								<span class="left col-grey">使用时间：2015.7.11-2015.7.21</span>
+								<!--<span class="right col-grey">查看详情</span>
+								<img src="static/images/arrive-right.png">-->
+							</div>
+						</a>
+					</div>
+					<div class="item">
+						<a>
+							<div class="info zhekouquan">
+							<div class="wrap-img">
+								<img src="static/images/temp-1.png">
+							</div>
+							<span class="col-orange">¥88</span>
+							<span>川香火锅代金券 X1</span>
+						</div>
+						<div class="down">
+							<span class="left col-grey">使用时间：2015.7.11-2015.7.21</span>
+							<!--<span class="right col-grey">查看详情</span>
+							<img src="static/images/arrive-right.png">-->
+						</div>
+						</a>
+					</div>
+					
+				</div>
+			</div>
+			<a class="comm-btn-top" id="ticket_select">
+				<div>
+					<img src="static/images/icon-add.png"/>
+				</div>选择优惠券
+			</a>
+			<div class="list-ticket merchants">
+				<a href="javascript:void(0);">
+					<div class="info daijinquan">
+						<div class="wrap-img">
+							<img src="static/images/temp-1.png">
+						</div>
+						<span class="col-orange">¥88</span>
+						<span>川香火锅代金券 X1</span>
+					</div>
+					<div class="down">
+						<span class="left col-grey">使用时间：2015.7.11-2015.7.21</span>
+					</div>
+				</a>
+				<a href="javascript:void(0);">
+					<div class="info zhekouquan">
+						<div class="wrap-img">
+							<img src="static/images/temp-1.png">
+						</div>
+						<span class="col-orange">¥88</span>
+						<span>川香火锅代金券 X1</span>
+					</div>
+					<div class="down">
+						<span class="left col-grey">使用时间：2015.7.11-2015.7.21</span>
+					</div>
+				</a>
+			</div>
+			<div class="form-normal">
+				<p class="title">预发张数</p>
+				<div class="end_font">
+					<input type="text" value="" placeholder="预发张数">
+					<span>张</span>
+				</div>
+				<p class="title">起始时间</p>
+				<div class="select-time">
+					<input type="" name="" id="date_start4" value="" placeholder="开始时间" class="mbsc-comp" readonly="">
+					<script type="text/javascript">
+						$('#date_start4').mobiscroll().calendar({
+						       theme: 'mobiscroll',
+						       lang: 'zh',
+						       display: 'bottom',
+						       controls: ['calendar'],
+						       dateFormat: 'yyyy-mm-dd'
+						});
+					</script>
+					<span>~</span>
+					<input type="" name="" id="date_end4" value="" placeholder="结束时间" class="mbsc-comp" readonly="">
+					<script type="text/javascript">
+						$('#date_end4').mobiscroll().calendar({
+						       theme: 'mobiscroll',
+						       lang: 'zh',
+						       display: 'bottom',
+						       controls: ['calendar'],
+						       dateFormat: 'yyyy-mm-dd'
+						});
+					</script>
+				</div>
+				<a class="comm-btn" href="javascript:void(0);">提交</a>		
+			</div>
+		</div>
+	</body>
+</html>

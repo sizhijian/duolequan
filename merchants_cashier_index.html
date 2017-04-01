@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="static/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="static/css/style.css" />
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="static/js/fastclick.js" type="text/javascript" charset="utf-8"></script>
+		<script src="static/js/hhSwipe.js" type="text/javascript" charset="utf-8"></script>
+		<script src="static/js/activity.js" type="text/javascript" charset="utf-8"></script>
+		<title>商家-收银</title>
+	</head>
+	<body>
+		<div class="wrap">
+			<header class="normal enter" style="padding-bottom: 1.875rem;">
+				<input type="tel" maxlength="19" name="userno"  id="userno" value="" placeholder="请输入会员ID/手机号"/>
+			</header>
+			<a class="comm-btn">确定</a>
+			
+			<nav class="nav-share cashier" hidden="">
+				<a class="saoma" href="merchants_cashier_result.html"><span>扫码会员</span></a>
+				<a class="samayanquan"><span>扫码验券</span></a>
+				<a class="shumayanquan" href="merchants_cashier_enter.html"><span>输码验券</span></a>
+			</nav>
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	$(function(){
+		$("#userno").focus();
+	});
+</script>

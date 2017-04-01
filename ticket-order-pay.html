@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="static/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="static/css/style.css" />
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="static/js/fastclick.js" type="text/javascript" charset="utf-8"></script>
+		<script src="static/js/activity.js" type="text/javascript" charset="utf-8"></script>
+		<title>支付订单</title>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="info-order">
+				<div class="wrap-img"><img src="static/images/temp-2.png"/></div>
+				<div class="name">
+					<p class="title">川香菜馆代金券 x1</p>
+					<p class="con">川香菜馆南门店</p>
+				</div>
+				<div class="value"><span>78</span>元</div>
+			</div>
+			<ul class="items-box items-box-pay">
+				<li><span class="name"><i class="wrap-img-wechatpay"></i>微信支付</span>
+					<span class="value">
+						<input type="radio" name="type-pay" id="" value="" checked="checked"/>
+						<i class="radio"></i>
+					</span>
+				</li>
+				<!--<li><span class="name"><i class="wrap-img-alipay"></i>支付宝支付</span>
+					<span class="value">
+						<input type="radio" name="type-pay" id="" value="" />
+						<i class="radio"></i>
+					</span>
+				</li>-->
+			</ul>
+			<a class="comm-btn" href="ticket-order-pay-success.html">确认支付</a>
+			<a class="comm-btn" href="ticket-order-pay-fail.html">确认支付（失败）</a>
+		</div>
+	</body>
+
+</html>

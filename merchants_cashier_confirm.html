@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="static/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="static/css/style.css" />
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="static/js/fastclick.js" type="text/javascript" charset="utf-8"></script>
+		<script src="static/js/hhSwipe.js" type="text/javascript" charset="utf-8"></script>
+		<script src="static/js/activity.js" type="text/javascript" charset="utf-8"></script>
+		<title>商家-收银-核销</title>
+	</head>
+	<body>
+		<div class="wrap">
+			<div id="used_tickets" class="list-tickets-use" hidden>
+				<div class="allScreen"></div>
+				<div class="list-ticket merchants cashier">
+					<p class="col-grey">本次使用优惠券</p>
+					<div class="scroll">
+						<a>
+							<div class="info daijinquan">
+								<div class="wrap-img">
+									<img src="static/images/temp-1.png">
+								</div>
+								<span class="col-orange">¥88</span>
+								<span>川香火锅代金券 X1</span>
+							</div>
+							<div class="down">
+								<span class="left col-grey">使用时间：2015.7.11-2015.7.21</span>
+							</div>
+						</a>
+						<a>
+							<div class="info daijinquan">
+								<div class="wrap-img">
+									<img src="static/images/temp-1.png">
+								</div>
+								<span class="col-orange">¥88</span>
+								<span>川香火锅代金券 X1</span>
+							</div>
+							<div class="down">
+								<span class="left col-grey">使用时间：2015.7.11-2015.7.21</span>
+							</div>
+						</a>
+						<a>
+							<div class="info daijinquan">
+								<div class="wrap-img">
+									<img src="static/images/temp-1.png">
+								</div>
+								<span class="col-orange">¥88</span>
+								<span>川香火锅代金券 X1</span>
+							</div>
+							<div class="down">
+								<span class="left col-grey">使用时间：2015.7.11-2015.7.21</span>
+							</div>
+						</a>
+						<a>
+							<div class="info daijinquan">
+								<div class="wrap-img">
+									<img src="static/images/temp-1.png">
+								</div>
+								<span class="col-orange">¥88</span>
+								<span>川香火锅代金券 X1</span>
+							</div>
+							<div class="down">
+								<span class="left col-grey">使用时间：2015.7.11-2015.7.21</span>
+							</div>
+						</a>
+					</div>
+					<button id="close" class="btn">关闭</button>
+				</div>
+			</div>
+			<dl class="info-dl">
+				<dd class="clear-padding">
+					<div class="left">
+						<span class="icon">
+							<img src="static/images/dl-nav-icon-2.png">
+						</span>菲尔普斯菲尔普斯菲尔普斯
+					</div>
+					<div class="right">
+						<p>会员ID：39905840</p>
+						<p>手机号：138-8990-0098</p>
+					</div>
+				</dd>
+			</dl>
+			<div class="info-money cashier clear-padding">
+				<p>
+					消费总金额
+				</p>
+				<div class="fa">
+					<p><span class="bgcol-trans">￥</span></p>
+					<span></span>
+					<input type="number" placeholder="请输入本次消费总金额">
+				</div>
+				<p>
+					不可折扣金额
+				</p>
+				<div class="fa">
+					<p><span class="bgcol-trans">￥</span></p>
+					<span></span>
+					<input type="number" placeholder="请输入本次消费不可折扣金额">
+				</div>
+			</div>
+			<div class="info-money cashier clear-padding">
+				<p>
+					是否使用多乐豆抵现
+				</p>
+				<div class="select">
+					<span class="value">
+						<input type="checkbox" name="type-ticket" id="" value="">
+						<i class="radio"></i>
+					</span>
+					<input type="rel" name="" id="" value="" placeholder="共有0多乐豆可使用">
+				</div>
+			</div>
+			<p><span class="clear-bd">实收金额：1300&nbsp;元</span></p>
+			
+			<div class="list-ticket merchants select" id="list_ticket_select">
+				<div class="title">请选择需要核销的优惠券</div>
+				<div class="item">
+					<div class="value daijinquan active">
+						<i class="radio"></i>
+						<input type="hidden" name="" id="" value="80" />
+					</div>
+					<a href="merchants-ticket-details.html">
+						<div class="info daijinquan">
+							<div class="wrap-img">
+								<img src="static/images/temp-1.png">
+							</div>
+							<span class="col-orange">¥80</span>
+							<span>川香火锅代金券 X1</span>
+						</div>
+						<div class="down">
+							<span class="left col-grey">使用时间：2015.7.11-2015.7.21</span>
+							<span class="right col-grey">查看详情</span>
+							<img src="static/images/arrive-right.png">
+						</div>
+					</a>
+				</div>
+				<div class="item">
+					<div class="value daijinquan">
+						<i class="radio"></i>
+						<input type="hidden" name="" id="" value="50" />
+					</div>
+					<a href="merchants-ticket-details.html">
+						<div class="info daijinquan">
+							<div class="wrap-img">
+								<img src="static/images/temp-1.png">
+							</div>
+							<span class="col-orange">¥50</span>
+							<span>川香火锅代金券 X1</span>
+						</div>
+						<div class="down">
+							<span class="left col-grey">使用时间：2015.7.11-2015.7.21</span>
+							<span class="right col-grey">查看详情</span>
+							<img src="static/images/arrive-right.png">
+						</div>
+					</a>
+				</div>
+				<div class="item">
+					<div class="value daijinquan">
+						<i class="radio"></i>
+						<input type="hidden" name="" id="" value="100" />
+					</div>
+					<a href="merchants-ticket-details.html">
+						<div class="info daijinquan">
+							<div class="wrap-img">
+								<img src="static/images/temp-1.png">
+							</div>
+							<span class="col-orange">¥100</span>
+							<span>川香火锅代金券 X1</span>
+						</div>
+						<div class="down">
+							<span class="left col-grey">使用时间：2015.7.11-2015.7.21</span>
+							<span class="right col-grey">查看详情</span>
+							<img src="static/images/arrive-right.png">
+						</div>
+					</a>
+				</div>
+				<div class="item">
+					<div class="value zhekouquan">
+						<i class="radio"></i>
+					</div>
+					<a href="merchants-ticket-details.html">
+						<div class="info zhekouquan">
+						<div class="wrap-img">
+							<img src="static/images/temp-1.png">
+						</div>
+						<span class="col-orange">¥50</span>						
+						<span>川香火锅折扣券 X1</span>
+					</div>
+					<div class="down">
+						<span class="left col-grey">使用时间：2015.7.11-2015.7.21</span>
+						<span class="right col-grey">查看详情</span>
+						<img src="static/images/arrive-right.png">
+					</div>
+					</a>
+				</div>
+				<div class="item">
+					<div class="value zhekouquan">
+						<i class="radio"></i>
+					</div>
+					<a href="merchants-ticket-details.html">
+						<div class="info zhekouquan">
+						<div class="wrap-img">
+							<img src="static/images/temp-1.png">
+						</div>
+						<span class="col-orange">¥30</span>
+					</div>
+					<div class="down">
+						<span class="left col-grey">使用时间：2015.7.11-2015.7.21</span>
+						<span class="right col-grey">查看详情</span>
+						<img src="static/images/arrive-right.png">
+					</div>
+					</a>
+				</div>
+			</div>
+			
+			
+			<p hidden><a class="col-orange" id="show_ticket_list">查看使用优惠券</a></p>
+			<div class="bar-down">
+			     <a href="merchants_cashier_final.html" class="comm-btn only">确认</a>
+			</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	var used_price = 150,selected_price =0;
+	//选择优惠券核销
+	$("#list_ticket_select .item>.value.zhekouquan").click(function(){
+		$("#list_ticket_select .item>.value").not($(this)).removeClass("active");
+		$(this).toggleClass("active");
+	});
+	$("#list_ticket_select .item>.value.daijinquan.active").each(function(index,element){
+		selected_price += +($(element).find("input").val())
+	});
+	$("#list_ticket_select .item>.value.daijinquan").click(function(){
+		if($(this).hasClass("active")){
+			$(this).removeClass("active");
+			selected_price -= +($(this).find("input").val())
+		}else{
+//			if($("#list_ticket_select .item>.value.daijinquan.active").lenght >0 ){
+//				selected_price = $("#list_ticket_select .item>.value.daijinquan.active").find("input").val()
+//			}
+//			console.log(selected_price)
+//			 ?  selected_price = $("#list_ticket_select .item>.value.daijinquan.active").find("input").val() :selected_price=0;
+			console.log(+(selected_price) + +($(this).find("input").val())+"如果选了这个")
+			if (+(selected_price) + +($(this).find("input").val()) <= used_price) {
+				$(this).addClass("active");
+				selected_price += +($(this).find("input").val());
+//			console.log(selected_price)
+				$("#list_ticket_select .item>.value.zhekouquan").removeClass("active");
+			}
+		}
+		
+		console.log(selected_price+'已经选了')
+	});
+</script>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="static/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="static/css/mobiscroll.custom-3.0.0-beta6.min.css"/>
+		<link rel="stylesheet" type="text/css" href="static/css/style.css" />
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="static/js/fastclick.js" type="text/javascript" charset="utf-8"></script>
+		<script src="static/js/mobiscroll.custom-3.0.0-beta6.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="static/js/activity.js" type="text/javascript" charset="utf-8"></script>
+		<script src="static/js/layer_mobile/layer.js" type="text/javascript" charset="utf-8"></script>
+		<title>商家-广告主-添加</title>
+		<script type="text/javascript">
+			$(function(){
+				$("#ticket_select").click(function(){
+					$("#select_show_box").show();
+				});
+				$("#select_show_box a").click(function(){
+					$("#select_show_box").hide();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="wrap">
+			<div id="select_show_box" hidden>
+				<div class="list-ticket merchants select">
+					<div class="item">
+						<a>
+							<div class="info daijinquan">
+								<div class="wrap-img">
+									<img src="static/images/temp-1.png">
+								</div>
+								<span class="col-orange">¥88</span>
+								<span>川香火锅代金券 X1</span>
+							</div>
+							<div class="down">
+								<span class="left col-grey">使用时间：2015.7.11-2015.7.21</span>
+								<!--<span class="right col-grey">查看详情</span>
+								<img src="static/images/arrive-right.png">-->
+							</div>
+						</a>
+					</div>
+					<div class="item">
+						<a>
+							<div class="info zhekouquan">
+							<div class="wrap-img">
+								<img src="static/images/temp-1.png">
+							</div>
+							<span class="col-orange">¥88</span>
+							<span>川香火锅代金券 X1</span>
+						</div>
+						<div class="down">
+							<span class="left col-grey">使用时间：2015.7.11-2015.7.21</span>
+							<!--<span class="right col-grey">查看详情</span>
+							<img src="static/images/arrive-right.png">-->
+						</div>
+						</a>
+					</div>
+					
+				</div>
+			</div>
+			
+				
+			<div class="info-title bgcol-orange">活动创建后不可修改，请认真填写!</div>
+			<a class="comm-btn-top" id="ticket_select">
+				<div>
+					<img src="static/images/icon-add.png"/>
+				</div>选择优惠券
+			</a>
+			<div class="list-ticket merchants">
+				<a href="javascript:void(0);">
+					<div class="info daijinquan">
+						<div class="wrap-img">
+							<img src="static/images/temp-1.png">
+						</div>
+						<span class="col-orange">¥88</span>
+						<span>川香火锅代金券 X1</span>
+					</div>
+					<div class="down">
+						<span class="left col-grey">使用时间：2015.7.11-2015.7.21</span>
+					</div>
+				</a>
+				<a href="javascript:void(0);">
+					<div class="info zhekouquan">
+						<div class="wrap-img">
+							<img src="static/images/temp-1.png">
+						</div>
+						<span class="col-orange">¥88</span>
+						<span>川香火锅代金券 X1</span>
+					</div>
+					<div class="down">
+						<span class="left col-grey">使用时间：2015.7.11-2015.7.21</span>
+					</div>
+				</a>
+			</div>
+			<div class="list-nav">
+				<a>
+					活动名称 
+					<span style="width: 75%;">
+						<input class="" type="text" name="title" maxlength="100" value="" placeholder="请输入活动名称" style="width: 100%;"/>
+					</span>
+				</a>
+				<a>
+					预发张数
+					<span>
+						<input type="tel" name="before_num" maxlength="4" value="" placeholder="请输入张数"/>&nbsp;&nbsp;张	
+					</span>
+				</a>
+				<p class="normal-title col-grey bgcol-trans">广告有效期</p>
+				<a>
+					开始时间<div class="arrive"></div><span><input type="text" name="start_time" id="date_start" value="" readonly placeholder="请选择"/></span>
+				</a>
+				<a>
+					结束时间<div class="arrive"></div><span><input type="text" name="end_time" id="date_end" value="" readonly placeholder="请选择"/></span>
+				</a>				
+				<p class="normal-title col-grey bgcol-trans">广告费设置</p>
+				<!--<a>
+					每领取1张支付<span>0元</span>
+				</a>-->
+				<a>
+					每次核销实收金额<span><input type="number" name="commission_rate" maxlength="3" value="" placeholder=""/>&nbsp;&nbsp;%</span>
+				</a>
+				<a>
+					最低保底金额<span><input type="number" name="lowest_amount" maxlength="4" value="1" placeholder=""/>&nbsp;&nbsp;元</span>
+				
+				</a>
+				<p class="normal-title col-grey bgcol-trans">推广图片（选填）</p>
+				<a style="height: auto;padding: 0;background: transparent;">
+					<!--请上传不大于1M的图片-->
+					<img src="static/images/bg-biz.png"/>
+				</a>
+			</div>
+			<a class="comm-btn" href="javascript:void(0);">提交</a>			
+		</div>
+		<script type="text/javascript">
+					$('#date_start').mobiscroll().calendar({
+					       theme: 'mobiscroll',
+					       lang: 'zh',
+					       display: 'bottom',
+					       controls: ['calendar'],
+					       dateFormat: 'yyyy-mm-dd'
+					});
+					$('#date_end').mobiscroll().calendar({
+					       theme: 'mobiscroll',
+					       lang: 'zh',
+					       display: 'bottom',
+					       controls: ['calendar'],
+					       dateFormat: 'yyyy-mm-dd'
+					});
+				</script>
+	</body>
+</html>

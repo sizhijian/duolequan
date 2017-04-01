@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="static/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="static/css/mobiscroll.custom-3.0.0-beta6.min.css"/>
+		<link rel="stylesheet" type="text/css" href="static/css/style.css" />
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="static/js/fastclick.js" type="text/javascript" charset="utf-8"></script>
+		<script src="static/js/mobiscroll.custom-3.0.0-beta6.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="static/js/activity.js" type="text/javascript" charset="utf-8"></script>
+		<title>商家-优惠券-添加</title>
+		<script type="text/javascript">
+			$(function(){
+				//代金券预览
+				$("#daijin_yulan").click(function(){
+					$("#yulan_box").show();
+					$("#yulan_box li").hide();
+					$("#yulan_box li.daijinquan.normal").show();
+				});
+				//折扣券预览
+				$("#zhekou_yulan").click(function(){
+					$("#yulan_box").show();
+					$("#yulan_box li").hide();
+					$("#yulan_box li.zhekou.normal").show();
+				});
+				//贵宾券预览
+				$("#guibin_yulan").click(function(){
+					$("#yulan_box").show();
+					$("#yulan_box li").hide();
+					$("#yulan_box li.guibinquan").show();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="wrap" style="padding-top: 3.142rem;">
+			<div id="select_product_box" class="box-product-select" hidden>
+				<div class="allScreen"></div>
+				<div id="" class="box">
+					<header>选择单品</header>
+					<div class="menu-title">
+						<div>全部分类</div>
+						<ul hidden>
+							<li class="active">全部分类</li>
+							<li>火锅</li>
+							<li>水果/零食</li>
+							<li>休闲娱乐</li>
+							<li>超市</li>
+							<li>丽人</li>
+							<li>电影</li>
+							<li>美食</li>
+							<li>旅游出行</li>
+						</ul>
+					</div>
+					<div class="con list-ticket select">
+						<div class="item">
+							<div class="value">
+								<input type="radio" name="type-ticket-select" id="" value="" checked="checked">
+								<i class="radio"></i>
+							</div>
+							<div class="product">
+								<div class="wrap-img">
+									<img src="static/images/temp-1.png">
+								</div>
+								<div class="info">
+									<p>蒙牛牛奶1</p>
+									<p>￥35.00元/盒子</p>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="value">
+								<input type="radio" name="type-ticket-select" id="" value="">
+								<i class="radio"></i>
+							</div>
+							<div class="product">
+								<div class="wrap-img">
+									<img src="static/images/temp-1.png">
+								</div>
+								<div class="info">
+									<p>蒙牛牛奶2</p>
+									<p>￥35.00元/盒子</p>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="value">
+								<input type="radio" name="type-ticket-select" id="" value="">
+								<i class="radio"></i>
+							</div>
+							<div class="product">
+								<div class="wrap-img">
+									<img src="static/images/temp-1.png">
+								</div>
+								<div class="info">
+									<p>蒙牛牛奶3</p>
+									<p>￥35.00元/盒子</p>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="value">
+								<input type="radio" name="type-ticket-select" id="" value="">
+								<i class="radio"></i>
+							</div>
+							<div class="product">
+								<div class="wrap-img">
+									<img src="static/images/temp-1.png">
+								</div>
+								<div class="info">
+									<p>蒙牛牛奶4</p>
+									<p>￥35.00元/盒子</p>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="value">
+								<input type="radio" name="type-ticket-select" id="" value="">
+								<i class="radio"></i>
+							</div>
+							<div class="product">
+								<div class="wrap-img">
+									<img src="static/images/temp-1.png">
+								</div>
+								<div class="info">
+									<p>蒙牛牛奶5</p>
+									<p>￥35.00元/盒子</p>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="value">
+								<input type="radio" name="type-ticket-select" id="" value="">
+								<i class="radio"></i>
+							</div>
+							<div class="product">
+								<div class="wrap-img">
+									<img src="static/images/temp-1.png">
+								</div>
+								<div class="info">
+									<p>蒙牛牛奶</p>
+									<p>￥35.00元/盒子</p>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="value">
+								<input type="radio" name="type-ticket-select" id="" value="">
+								<i class="radio"></i>
+							</div>
+							<div class="product">
+								<div class="wrap-img">
+									<img src="static/images/temp-1.png">
+								</div>
+								<div class="info">
+									<p>蒙牛牛奶</p>
+									<p>￥35.00元/盒子</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="bar-down">
+						<a class="cancel" href="javascript:;">取消</a>
+						<a class="submit">确定</a>
+					</div>
+				</div>
+			</div>
+			<div class="yulan" id="yulan_box" hidden>
+				<div class="allScreen"></div>
+				<ul class="list-ticket">
+					<li class="guibinquan">
+						<div class="left">
+							<p>8.8折</p>
+						</div>
+						<div class="center">
+							<p>汉庭连锁贵宾券</p>
+							<p class="col-grey">使用时间：2015.7.11-2015.7.21</p>
+						</div>
+					</li>
+					<li class="daijinquan normal">
+						<div class="left">
+							<p>￥200</p>
+						</div>
+						<div class="center">
+							<p>汉庭连锁代金券</p>
+							<p class="col-grey">满100元可用，每100元赠送<span class="col-orange">40</span>乐豆</p>
+							<p class="col-grey">使用时间：2015.7.11-2015.7.21</p>
+						</div>
+						<div class="line" style="font-size: .9rem;">
+							推广券&nbsp;&nbsp;10乐豆=1元
+						</div>
+					</li>
+					<li class="daijinquan tui">
+						<div class="left">
+							<p>￥200</p>
+						</div>
+						<div class="center">
+							<p>汉庭连锁代金券</p>
+							<p class="col-grey">满100元可用，每100元赠送<span class="col-orange">40</span>乐豆</p>
+							<p class="col-grey">使用时间：2015.7.11-2015.7.21</p>
+						</div>
+						<div class="line">
+							注：10乐豆=1元
+						</div>
+					</li>
+					<li class="zhekou normal">
+						<div class="left">
+							<p>8.8折</p>
+						</div>
+						<div class="center">
+							<p>汉庭连锁折扣券</p>
+							<p class="col-grey">每100元赠送<span class="col-orange">40</span>乐豆</p>
+							<p class="col-grey">使用时间：2015.7.11-2015.7.21</p>
+						</div>
+					</li>
+					<li class="zhekou tui">
+						<div class="left">
+							<p>8.8折</p>
+						</div>
+						<div class="center">
+							<p>汉庭连锁折扣券</p>
+							<p class="col-grey">使用时间：2015.7.11-2015.7.21</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<nav class="nav-tab p-fixed" style="top: 0;">
+				<a class="active" href="javascript:;">代金券</a>
+				<a href="javascript:;">折扣券</a>
+				<!--<a href="javascript:;">贵宾券</a>-->
+			</nav>
+			<div class="info-title bgcol-blue">每月最多创建10张优惠券</div>
+			<div class="con-tab">
+				
+				
+				<form id="dj_form" name="dj_form" class="form-normal" action="" method="post">
+					<p class="title">代金券名称</p>
+					<input type="text" name="title" maxlength="18" value="" placeholder="请输入代金券名称（例 : 门店名+金额+代金券）">
+					<p class="title">代金券金额</p>
+					<input type="number" name="worth_value" maxlength="3" value="" placeholder="请输入代金券金额">
+					<p class="title">使用条件</p>
+					<div class="push">
+						<span>消费满</span>
+						<input type="number" name="brim_amount" id="" maxlength="5" value="" placeholder="请输入"/>
+						<span>元可使用此券</span>
+					</div>
+					<p class="title">使用须知</p>
+					<textarea name="description" rows="3" cols="" placeholder="请输入使用须知"></textarea>
+					<p class="title">库存数量（最多9999张）</p>
+					<div class="end_font">
+						<input type="tel" name="total_num" maxlength="4" value="" placeholder="请设置代金券库存数量">
+						<span>张</span>
+					</div>
+					<!--<p class="title">代金券发放数量</p>
+					<div class="end_font">
+						<input type="text" value="" placeholder="请设置发放多少张代金券">
+						<span>张</span>
+					</div>
+					<p class="title">使用张数</p>
+					<ul class="select">
+						<li>
+							<input type="radio" name="use-num" id="" value="" checked="checked">
+							<i class="radio"></i>
+							<span class="name">不限制使用张数</span>
+							
+						</li>
+						<li>
+							<input type="radio" name="use-num" id="" value=""">
+							<i class="radio"></i>
+							<input type="text" class="underline width50" name="" id="" value="" placeholder="请输入单次最多使用张数"/>
+							<span class="name">张</span>
+						</li>
+					</ul>-->
+					<p class="title">有效期</p>
+					<ul class="select">
+						<li>
+							<input type="radio" name="select_time" value="0" checked="checked">
+							<i class="radio"></i>
+							<span class="name">发券后 </span>
+							<input type="tel" maxlength="2" class="underline width25 txt-center col-normal" name="fixed_term" value="" placeholder="请输入天数"/>
+							<span class="name">天内有效 </span>
+							
+						</li>
+						<li>
+							<input type="radio" name="select_time" value="1">
+							<i class="radio"></i>
+							<input type="text" class="underline width25 col-normal" name="become_time" id="date_start" value="" placeholder="开始时间"/>
+							<span class="name">至</span>
+							<input type="text" class="underline width25 col-normal" name="invalid_time" id="date_end" value="" placeholder="结束时间"/>
+						</li>
+					</ul>
+					<!--<p class="title">赠送乐豆</p>
+					<div class="end_font">
+						<input type="text" name="integral_num" value="" placeholder="请输入赠送乐豆的百分比">
+						<span>%</span>
+					</div>-->
+					<!--<p class="title">发放起始时间</p>
+					<div class="select-time">
+						<input type="text" name="start_time" id="date_start4" value="" placeholder="开始时间" class="mbsc-comp" readonly="">
+						<span>~</span>
+						<input type="text" name="end_time" id="date_end4" value="" placeholder="结束时间" class="mbsc-comp" readonly="">
+					</div>-->
+					<p class="title">每人领取上限（最多99张）</p>
+					<div class="end_font">
+						<input type="tel" name="limited_num" maxlength="2" value="" placeholder="请输入代金券领取上限">
+						<span>张</span>
+					</div>
+                    <p class="title">单次消费最多使用张数</p>
+					<div class="end_font">
+						<input type="tel" name="limited_num" maxlength="2" value="" placeholder="请输入单次消费最多使用张数">
+						<span>张</span>
+					</div>
+					<!--<p class="title">推送条件</p>
+					<div class="push">
+						<span>消费满</span>
+						<input type="text" name="push_achieve_amount" value="" placeholder="请输入"/>
+						<span>推送此代金券</span>
+					</div>-->
+					<div class="bar-down special">
+						<a id="daijin_yulan" class="cancel" href="javascript:;">预览</a>
+						<input class="submit" type="submit" name="" id="" value="提交">
+					</div>
+				</form>
+				
+				<form id="zk_form" name="zk_form" class="form-normal" action="" method="post">
+					<p class="title">折扣券名称</p>
+					<input type="text" name="title" maxlength="18" value="" placeholder="请输入折扣券名称（例 : 门店名+金额+折扣券）">
+					<p class="title">折扣</p>
+					<div class="zhekou">
+						<input class="zhekou" type="number" name="worth_value" maxlength="3" value="" placeholder="请输入折扣数字，如8.8">
+					</div>
+					<!--<p class="title">折扣券发放数量</p>
+					<div class="end_font">
+						<input type="text" value="" placeholder="请设置发放多少张折扣券">
+						<span>张</span>
+					</div>-->
+					<p class="title">库存数量（最多9999张）</p>
+					<div class="end_font">
+						<input type="tel" name="total_num" maxlength="4" value="" placeholder="请设置折扣券库存数量">
+						<span>张</span>
+					</div>
+					<p class="title">使用须知</p>
+					<textarea name="description" rows="3" cols="" placeholder="请输入使用须知">折扣券不可叠加使用</textarea>
+					<p class="title">有效期</p>
+					<ul class="select">
+						<li>
+							<input type="radio" name="select_time1" id="" value="0" checked="checked">
+							<i class="radio"></i>
+							<span class="name">发券后 </span>
+							<input type="tel" maxlength="2" class="underline width25 txt-center" name="fixed_term" value="" placeholder="请输入天数"/>
+							<span class="name">天内有效 </span>
+							
+						</li>
+						<li>
+							<input type="radio" name="select_time1" id="" value="1">
+							<i class="radio"></i>
+							<input type="text" class="underline width25" name="become_time" id="date_start1" value="" placeholder="开始时间"/>
+							<span class="name">至</span>
+							<input type="text" class="underline width25" name="invalid_time" id="date_end1" value="" placeholder="结束时间"/>
+						</li>
+					</ul>
+					<!--<p class="title">赠送乐豆</p>
+					<div class="end_font">
+						<input type="text" name="integral_num" value="" placeholder="请输入赠送乐豆的百分比">
+						<span>%</span>
+					</div>
+					<p class="title">发放起始时间</p>
+					<div class="select-time">
+						<input type="" name="start_time" id="date_start5" value="" placeholder="开始时间" class="mbsc-comp" readonly="">
+						<span>~</span>
+						<input type="" name="end_time" id="date_end5" value="" placeholder="结束时间" class="mbsc-comp" readonly="">
+					</div>-->
+					<p class="title">每人领取上限（最多99张）</p>
+					<div class="end_font">
+						<input type="tel" name="limited_num" maxlength="2" value="" placeholder="请输入折扣券领取上限">
+						<span>张</span>
+					</div>
+					<!--<p class="title">推送条件</p>
+					<div class="push">
+						<span>消费满</span>
+						<input type="text" name="push_achieve_amount" value="" placeholder="请输入"/>
+						<span>推送此折扣券</span>
+					</div>-->
+					<div class="bar-down special">
+						<a id="zhekou_yulan" class="cancel" href="javascript:;">预览</a>
+						<input class="submit" type="submit" name="" id="" value="提交">
+					</div>
+				</form>
+				
+				<form class="form-normal" action="" method="post">
+					<p class="title">优惠券名称</p>
+					<input type="text" value="" placeholder="请输入优惠券名称">
+					<p class="title">折扣</p>
+					<div class="zhekou">
+						<input class="zhekou" type="text" value="" placeholder="请输入折扣数字，如8.8">
+					</div>
+					<p class="title">优惠券发放数量</p>
+					<div class="end_font">
+						<input type="tel" value="" placeholder="请设置发放多少张优惠券">
+						<span>张</span>
+					</div>
+					<p class="title">使用须知</p>
+					<textarea name="" rows="3" cols="" placeholder="请输入使用须知"></textarea>
+					<p class="title">有效期</p>
+					<ul class="select">
+						<li>
+							<input type="radio" name="select_time" id="" value="" checked="checked">
+							<i class="radio"></i>
+							<span class="name">发券后 </span>
+							<input type="tel" class="underline width25" name="" id="" value="" placeholder="请输入天数"/>
+							<span class="name">天内有效 </span>
+							
+						</li>
+						<li>
+							<input type="radio" name="select_time" id="" value=""">
+							<i class="radio"></i>
+							<input type="text" class="underline width25" name="" id="date_start2" value="" placeholder="开始时间"/>
+							<span class="name">至</span>
+							<input type="text" class="underline width25" name="" id="date_end2" value="" placeholder="结束时间"/>
+						</li>
+					</ul>
+					<p class="title">赠送乐豆</p>
+					<div class="end_font">
+						<input type="text" value="" placeholder="请输入赠送乐豆的百分比">
+						<span>%</span>
+					</div>
+					<p class="title">发放起始时间</p>
+					<div class="select-time">
+						<input type="" name="" id="date_start6" value="" placeholder="开始时间" class="mbsc-comp" readonly="">
+						<span>~</span>
+						<input type="" name="" id="date_end6" value="" placeholder="结束时间" class="mbsc-comp" readonly="">
+					</div>
+					<p class="title">领取上限</p>
+					<div class="end_font">
+						<input type="text" value="" placeholder="请输入优惠券领取上限">
+						<span>张</span>
+					</div>
+					<p class="title">推送条件</p>
+					<div class="push">
+						<span>消费满</span>
+						<input type="text" name="" id="" value="" placeholder="请输入"/>
+						<span>推送此优惠券</span>
+					</div>
+					<div class="bar-down special">
+						<a id="guibin_yulan" class="cancel" href="javascript:;">预览</a>
+						<input class="submit" type="submit" name="" id="" value="提交">
+					</div>
+				</form>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$('#date_start').mobiscroll().calendar({
+			       theme: 'mobiscroll',
+			       preset: 'date',
+			       lang: 'zh',
+			       display: 'bottom',
+			       dateFormat: 'yyyy-mm',
+				   mode: "scroller"
+			});
+			$('#date_end').mobiscroll().calendar({
+			       theme: 'mobiscroll',
+			       lang: 'zh',
+			       display: 'bottom',
+			       controls: ['calendar']
+			});
+			$('#date_start4').mobiscroll().calendar({
+				       theme: 'mobiscroll',
+				       lang: 'zh',
+				       display: 'bottom',
+				       controls: ['calendar']
+				});
+			$('#date_end4').mobiscroll().calendar({
+						       theme: 'mobiscroll',
+						       lang: 'zh',
+						       display: 'bottom',
+						       controls: ['calendar']
+						});
+			$('#date_start1').mobiscroll().calendar({
+						       theme: 'mobiscroll',
+						       lang: 'zh',
+						       display: 'bottom',
+						       controls: ['calendar']
+						});
+						$('#date_end1').mobiscroll().calendar({
+						       theme: 'mobiscroll',
+						       lang: 'zh',
+						       display: 'bottom',
+						       controls: ['calendar']
+						});
+						$('#date_start5').mobiscroll().calendar({
+							       theme: 'mobiscroll',
+							       lang: 'zh',
+							       display: 'bottom',
+							       controls: ['calendar'],
+							});
+							$('#date_end5').mobiscroll().calendar({
+							       theme: 'mobiscroll',
+							       lang: 'zh',
+							       display: 'bottom',
+							       controls: ['calendar'],
+							});
+							$('#date_start2').mobiscroll().calendar({
+						       theme: 'mobiscroll',
+						       lang: 'zh',
+						       display: 'bottom',
+						       controls: ['calendar'],
+						});
+						$('#date_end2').mobiscroll().calendar({
+						       theme: 'mobiscroll',
+						       lang: 'zh',
+						       display: 'bottom',
+						       controls: ['calendar'],
+						});
+						$('#date_start6').mobiscroll().calendar({
+							       theme: 'mobiscroll',
+							       lang: 'zh',
+							       display: 'bottom',
+							       controls: ['calendar'],
+							});
+							$('#date_end6').mobiscroll().calendar({
+							       theme: 'mobiscroll',
+							       lang: 'zh',
+							       display: 'bottom',
+							       controls: ['calendar'],
+							});
+		</script>
+	</body>
+</html>
